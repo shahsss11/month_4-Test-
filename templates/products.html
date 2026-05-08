@@ -1,0 +1,13 @@
+<h1>Все продукты</h1>
+<ul>
+    {% for product in prd %}
+        <li>
+            Название: {{ product.name }}
+            <br>
+            Цена: {{ product.price }}
+            <br>
+            Категория: {{ product.category.name }}
+        </li>
+        <hr>
+    {% endfor %}
+</ul>

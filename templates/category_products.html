@@ -1,0 +1,12 @@
+<h1>
+    Продукты категории:
+    {{ ctg.name }}
+</h1>
+<ul>
+    {% for prd in prd %}
+        <li>
+            {{ prd.name }} - {{ prd.price }}
+        </li>
+    {% endfor %}
+</ul>
+<a href="{% url 'categories' %}">Назад</a>
