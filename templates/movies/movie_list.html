@@ -1,0 +1,10 @@
+<h1>Фильмы</h1>
+{% for movie in page_obj %}
+<h2>{{ movie.title }}</h2>
+<img src="{{ movie.poster.url }}" width="200">
+<p>{{ movie.description }}</p>
+<a href="{% url 'movie_detail' movie.id %}">
+    Подробнее
+</a>
+<hr>
+{% endfor %}

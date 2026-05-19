@@ -1,0 +1,6 @@
+<h1>Список пользователей</h1>
+{% for i in users %}
+<h2>Пользователь: {{ i.username }}</h2>
+<p>Имя: {{ i.first_name }}</p>
+<p>Email: {{ i.email }}</p>
+{% endfor %}

@@ -1,0 +1,11 @@
+<h1>{{ movie.title }}</h1>
+<p>{{ movie.description }}</p>
+<img src="{{ movie.poster.url }}" width="200">
+<hr>
+<p><b>Актёры:</b> {{ movie.actors }}</p>
+<p><b>Дата релиза:</b> {{ movie.release_date }}</p>
+<p><b>Длительность:</b> {{ movie.duration }} мин</p>
+<p><b>Страна:</b> {{ movie.country }}</p>
+<p><b>Язык:</b> {{ movie.language }}</p>
+<p><b>Бюджет:</b> {{ movie.budget }}</p>
+<p><b>Создан:</b> {{ movie.created_at }}</p>
