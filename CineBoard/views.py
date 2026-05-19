@@ -24,10 +24,6 @@ class LoginView(generic.FormView):
         return super().form_valid(form)
 
 
-class LogoutView(generic.View):
-    def get(self, request):
-        logout(request)
-        return redirect('/login/')
 
 
 class UserListView(generic.ListView):
